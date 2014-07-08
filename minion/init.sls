@@ -2,6 +2,6 @@ salt-minion:
   pkg.installed:
     - name: salt-minion
   service.running:
-    - enabled: True
+    - enable: True
     - watch:
       - pkg: salt-minion
