@@ -1,0 +1,6 @@
+{% set sudogroup = salt['grains.filter_by']({
+  'Debian': {'name': 'sudo'},
+  'Ubuntu': {'name': 'sudo'},
+  'RedHat': {'name': 'wheel'},
+  'CentOS': {'name': 'wheel'},
+}, merge=salt['pillar.get']('sudogroup:lookup')) %}
