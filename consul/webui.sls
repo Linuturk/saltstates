@@ -8,15 +8,11 @@
 consul-nginx:
   pkg.installed:
     - name: nginx
-
-consul-nginx-service:
   service.running:
     - name: nginx
     - enable: True
-  watch:
-    - file: /etc/nginx/sites-available/default
-
-/etc/nginx/sites-available/default:
+    - watch:
+      - file: /etc/nginx/sites-available/default
   file.managed:
     - source: salt://consul/nginx-proxypass
     - name: /etc/nginx/sites-available/default
