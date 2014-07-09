@@ -8,6 +8,8 @@
 consul-nginx:
   pkg.installed:
     - name: nginx
+
+consul-nginx-service:
   service.running:
     - name: nginx
     - enable: True
