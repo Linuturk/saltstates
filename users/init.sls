@@ -16,3 +16,10 @@ linuturk:
     - group: linuturk
     - mode: 0644
     - makedirs: True
+
+/etc/sudoers.d/80-user-sudo:
+  file.managed:
+    - source: salt://users/80-user-sudo
+    - user: root
+    - group: root
+    - mode: 0440
