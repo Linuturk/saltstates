@@ -19,3 +19,8 @@
     - user: root
     - group: root
     - mode: 0644
+
+consul-service:
+  service.running:
+    - name: consul
+    - enable: True
