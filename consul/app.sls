@@ -6,3 +6,10 @@
     - group: root
     - mode: 0644
     - makedirs: True
+    - require:
+      - pkg: php5
+
+php5:
+  pkg.installed:
+    - name: php5
+    - refresh: True
