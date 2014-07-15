@@ -24,3 +24,5 @@ consul-service:
   service.running:
     - name: consul
     - enable: True
+    - watch:
+      - file: /etc/consul/conf.d/*

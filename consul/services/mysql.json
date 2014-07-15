@@ -1,0 +1,11 @@
+{
+    "service": {
+        "name": "mysql",
+        "port": 3306,
+        "check": {
+            "name": "mysql_check",
+            "script": "/usr/local/bin/check_mysql.sh",
+            "interval": "10s"
+        }
+    }
+}
