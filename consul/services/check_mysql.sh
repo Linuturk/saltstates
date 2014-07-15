@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [nc -z localhost 3306]; then
+if [ nc -z localhost 3306 ]; then
     exit 0;
 fi
 
