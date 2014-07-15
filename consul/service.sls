@@ -12,7 +12,7 @@
     - name: /usr/local/bin/check_mysql.sh
     - user: root
     - group: root
-    - mode: 0644
+    - mode: 0755
 
 /var/www/html/index.php:
   file.managed:
@@ -21,3 +21,4 @@
     - user: root
     - group: root
     - mode: 0644
+    - makedirs: True
