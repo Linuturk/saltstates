@@ -1,0 +1,11 @@
+{
+    "service": {
+        "name": "apache",
+        "port": 80,
+        "check": {
+            "name": "apache_check",
+            "script": "/usr/local/bin/check_apache.sh",
+            "interval": "1s"
+        }
+    }
+}
