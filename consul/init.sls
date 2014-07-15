@@ -15,7 +15,7 @@
 
 /etc/init/consul.conf:
   file.managed:
-    - source: salt://consul/upstartjob
+    - source: salt://consul/files/upstartjob
     - user: root
     - group: root
     - mode: 0644

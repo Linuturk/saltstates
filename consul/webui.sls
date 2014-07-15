@@ -14,7 +14,7 @@ consul-nginx:
     - watch:
       - file: /etc/nginx/sites-available/default
   file.managed:
-    - source: salt://consul/nginx-proxypass
+    - source: salt://consul/files/nginx-proxypass
     - name: /etc/nginx/sites-available/default
     - user: root
     - group: root
