@@ -3,5 +3,5 @@
   "data_dir": "/opt/consul",
   "server": true,
   "ui_dir": "/usr/local/bin/consul_ui/dist",
-  "start_join": ["10.208.232.22", "10.208.232.32", "10.208.232.31"]
+  "start_join": {{ pillar['consul']['start_join'] }}
 }
