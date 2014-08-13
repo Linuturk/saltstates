@@ -1,8 +1,8 @@
 /usr/local/bin/consul:
   archive.extracted:
     - name: /usr/local/bin/
-    - source: https://dl.bintray.com/mitchellh/consul/0.3.0_linux_amd64.zip
-    - source_hash: sha256=da1337ab3b236bad19b791a54a8df03a8c2a340500a392000c21608696957b15
+    - source: https://dl.bintray.com/mitchellh/consul/0.3.1_linux_amd64.zip
+    - source_hash: sha256=c33da8ac24f01eefe8549e8d4d301b4e18a71b61f06ae1377a88ccd6eab2cfbb
     - archive_format: zip
     - if_missing: /usr/local/bin/consul
 
