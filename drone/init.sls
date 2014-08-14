@@ -25,3 +25,10 @@ drone:
       - drone: http://downloads.drone.io/latest/drone.deb
   service.running:
     - name: drone
+    - watch:
+      - file: /etc/default/drone
+
+/etc/default/drone:
+  file.managed:
+    - source: salt://drone/files/drone
+    - template: jinja
