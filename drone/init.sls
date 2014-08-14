@@ -3,7 +3,9 @@ drone-deps:
     - pkgs: {{ pillar['drone']['packages'] }}
 
 docker-py:
-  pip.installed
+  pip.installed:
+    - require:
+      - pkg: drone-deps
 
 docker:
   pkgrepo.managed:
