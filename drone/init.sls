@@ -10,4 +10,9 @@ docker:
   pkg.installed:
     - name: lxc-docker
 
-
+drone:
+  pkg.installed:
+    - sources:
+      - drone: http://downloads.drone.io/latest/drone.deb
+  service.running:
+    - name: drone
