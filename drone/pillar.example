@@ -1,0 +1,6 @@
+drone:
+  packages:
+    - python-pip
+  scheme: http
+  hostname: drone.example.com
+  port: 80
