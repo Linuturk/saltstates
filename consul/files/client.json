@@ -1,6 +1,6 @@
 {
-  "datacenter": "iad",
-  "data_dir": "/opt/consul",
+  "datacenter": "{{ pillar['consul']['datacenter'] }}",
+  "data_dir": "{{ pillar['consul']['data_dir] }}",
   "ui_dir": "/usr/local/bin/consul_ui/dist",
   "start_join": {{ pillar['consul']['start_join'] }}
 }
