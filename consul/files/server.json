@@ -1,5 +1,6 @@
 {
   "datacenter": "{{ salt['pillar.get']('consul:datacenter') }}",
+  "acl_datacenter": "{{ salt['pillar.get']('consul:datacenter') }}",
   "data_dir": "{{ salt['pillar.get']('consul:data_dir') }}",
   "server": true,
   "ui_dir": "/usr/local/bin/consul_ui/dist",
