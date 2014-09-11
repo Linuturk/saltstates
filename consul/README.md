@@ -1,8 +1,6 @@
 consul
 ======
 
-Use Salt-Cloud to provision your nodes. Then:
+Use Salt-Cloud to provision your nodes.
 
-1. Run Highstate.
-1. Bootstrap one node. `consul agent -config-file=/etc/consul/conf.d/server.json --bootstrap`
-1. Restart consul agent.
+Set `bootstrap_expect` to the number of server nodes you have defined in your map file.
