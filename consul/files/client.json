@@ -1,6 +1,6 @@
 {
-  "datacenter": "{{ pillar['consul']['datacenter'] }}",
-  "data_dir": "{{ pillar['consul']['data_dir] }}",
+  "datacenter": "{{ salt['pillar.get']('consul:datacenter') }}",
+  "data_dir": "{{ salt['pillar.get']('consul:data_dir') }}",
   "ui_dir": "/usr/local/bin/consul_ui/dist",
-  "start_join": {{ pillar['consul']['start_join'] }}
+  "start_join": {{ salt['pillar.get']('consul:start_join') }}
 }
