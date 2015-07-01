@@ -11,7 +11,7 @@ linuturk:
 /home/linuturk/.ssh/authorized_keys:
   file.managed:
     - source: https://github.com/linuturk.keys
-    - source_hash: sha256=93a9804ddc4fb6e3de515562243214a872f8d2f79779a4cbc4b8a627e669c846
+    - source_hash: sha256=c2eb790ab3a6f72d944cb074c878ff28822e2b9c09ada8088da9778b6d0b439d
     - user: linuturk
     - group: linuturk
     - mode: 0644
